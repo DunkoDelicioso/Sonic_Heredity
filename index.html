@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Great+Vibes&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+
+
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <script src="animal.js"></script>
+
+  <div class="container" style="background-color: rgb(0, 0, 0);">
+    
+    <div class ="box"> 
+      <div class="row">
+        <div class="column" style="background-color: rgba(255, 136, 136, 0); color: white;">
+          <p class="text" style="font-size: 20px; text-align: left; position:absolute; z-index: 10; font-family: 'Comfortaa'" >
+          POPULATION SIZE: <span id="myText" style="color: rgb(255, 255, 255);"></span> <br>
+          SPONTANEOUS BIRTH RATE: <span id="birthText" style="color: rgb(255, 255, 255);"> </span> CHANCE PER FRAME<br>
+          DEATH RATE: <span id="deathText" style="color: rgb(255, 255, 255);"> </span> HP/FRAME <br>
+          FOOD LEVEL: <span id="foodText" style="color: rgb(255, 255, 255);"> </span> <br>
+          POISON LEVEL: <span id="poisonText" style="color: rgb(255, 255, 255);"> </span> <br>
+          MICRO SPEED MODIFIER: <span id="speedText" style="color: rgb(255, 255, 255);"> </span> <br>
+        </p>
+        </div>
+        <div class="column" style="margin-top: 10%; background-color: rgba(176, 170, 255, 0); position:fixed; z-index: 11; ">
+          <div style="text-align: center;" class="slideHolder">
+            <div id="sliderA" class="slider"> </div> 
+            <br>  
+            <div id="sliderB" class="slider"></div> 
+            <br> 
+            <div id="sliderC" class="slider">  </div> 
+            <br> 
+          </div>
+        </div> 
+      </div>
+    </div>
+<script>
+  let sliderZ = document.getElementById('sliderA')
+  let sliderW = document.getElementById('sliderB')
+  let sliderY = document.getElementById('sliderC')
+  
+  sliderZ.addEventListener('mouseover', function(event){
+  document.getElementById('speedText').style.color =  'red';
+  })
+
+  sliderZ.onmouseleave = function(){
+  document.getElementById('speedText').style.color =  'white';
+  };
+
+  sliderW.addEventListener('mouseover', function(event){
+  document.getElementById('deathText').style.color =  'red';
+  })
+
+  sliderW.onmouseleave = function(){
+  document.getElementById('deathText').style.color =  'white';
+  };
+
+  sliderY.addEventListener('mouseover', function(event){
+  document.getElementById('birthText').style.color =  'red';
+  })
+
+  sliderY.onmouseleave = function(){
+  document.getElementById('birthText').style.color =  'white';
+  };
+    
+
+</script>
+
+
+    <div class ="box2"> 
+      <div id="sketch-container"></div>
+    </div>
+    
+  </div>
+    
+   <!-- <div style="color: red; font-family: Arial, Helvetica, sans-serif; font-size:2vw;"> 
+    SONIC HEREDITY || THE SURVIVING MOLECULES PASS THIER INFORMATION TO THE NEXT GENERATION
+    || EACH TONE IS THE GENETIC FOOTPRINT OF EACH MOLECULE
+    || AIM TO FIND THE SETTINGS THAT PROMOTE REPRODUCTION AND LONGEVITY
+    || CLICK THE SCREEN TO SPAWN MORE
+    || THIS WAS BASED AND DEVELOPED FROM DANIEL SCHIFFMANS EXAMPLES OF GENETIC ECOSYSTEMS
+    || CLUSTER CORP 2021, NEW YORK CITY, NY</div>
+    <br> -->
+    <!-- <img src="CLUSTER(WHITE,TRANSPARENT)-01.png" width="1000px" > -->
+  
+  
+
+</body></html> 

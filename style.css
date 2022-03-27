@@ -1,0 +1,66 @@
+html{
+  background-color: black;
+  outline: 5px solid black;
+}
+
+body{
+  background-color: black;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 180px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0);
+  outline: none;
+  border: 0.5px solid white;
+  border-radius: 1px;
+}
+
+
+/* for chrome/safari */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  border: 0.5px solid white;
+  border-radius: 0px;
+
+}
+
+/* for firefox */
+.slider::-moz-range-thumb {
+  width: 500px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: 0.5px solid white;
+  border-radius: 1px;
+}
+
+#sketch-container{
+position: absolute;
+}
+
+.text{
+padding-left: 50px;
+padding-top: 50px;
+}
+
+.slideHolder{
+  padding-left: 50px;
+  padding-top: 60px;
+}
+
